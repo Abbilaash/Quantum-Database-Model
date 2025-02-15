@@ -1,0 +1,6 @@
+qiskit
+qiskit-aer
+pandas
+matplotlib
+numpy
+python-dotenv
