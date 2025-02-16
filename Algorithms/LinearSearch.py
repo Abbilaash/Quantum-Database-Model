@@ -5,9 +5,12 @@ import pandas as pd
 def linear_search():
     start_time = time.time()
 
-    df = pd.read_csv(".csv",delimiter=',')
+    df = pd.read_csv("C:/Users/abbil/Downloads/Crime_Data_from_2020_to_Present.csv",delimiter=',')
     count = 0
     for record in df.iterrows():
+        if record[1]['DR_NO'] == 250504051:  # last record in the dataset
+            print(record)
+            break
         count+=1
     end_time = time.time()
 

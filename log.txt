@@ -1,4 +1,4 @@
 TEST 1:
     Algorithm: Simple Linear Traversal
-    Number of records: 5000000
-    Time taken for linear traversal: 152.77674 seconds
+    Number of records: 1132580
+    Time taken for linear traversal: 68.34418 seconds
