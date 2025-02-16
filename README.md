@@ -9,6 +9,8 @@ This project implements Grover’s Search Algorithm, a quantum algorithm that pr
 ```cd Quantum-Database-Model```
 2. Install requirements
 ```pip install -r requirements.txt```
+3. Add env variables
+```IBMQ_TOKEN=<ibm qiskit api>```
 
 ## Dataset
 The below drive folder has the .csv dataset
