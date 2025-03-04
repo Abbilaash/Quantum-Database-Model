@@ -5,16 +5,14 @@ import pandas as pd
 def linear_search():
     start_time = time.time()
 
-    df = pd.read_csv("C:/Users/abbil/Downloads/Crime_Data_from_2020_to_Present.csv",delimiter=',')
+    df = pd.read_csv("dataset.csv")
     count = 0
     for record in df.iterrows():
-        if record[1]['DR_NO'] == 250504051:  # last record in the dataset
-            print(record)
-            break
         count+=1
+        if record[1]["Problem"] == 'Fever':
+            print(record[1]['PatientID'],record[1]['Name'],record[1]['Problem'])
     end_time = time.time()
 
-    end_time = time.time()
     print(f"Number of records: {count}")
     print(f"Time taken for linear traversal: {end_time - start_time:.5f} seconds")
 
